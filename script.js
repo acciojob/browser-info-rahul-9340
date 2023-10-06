@@ -1,9 +1,8 @@
 //your JS code here. If required.
-let ref = document.getElementById("browser-info")
+let newref = document.getElementById("browser-info")
 
-ref.innerHTML = "You are using";
-ref.innerHTML += navigator.appName;
-ref.innerHTML += navigator.appVersion;
+newref.innerText = `You are using ${navigator.appName}${navigator.appVersion}`;
+       
 
 
 
