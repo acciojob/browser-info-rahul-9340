@@ -1,11 +1,13 @@
-//your JS code here. If required.
-let newref = document.getElementById("browser-info")
+const browserInfoDiv = document.getElementById("browser-info");
 
-newref.innerText = `You are using ${navigator.userAgent} ${navigator.appName} ${navigator.appVersion}`;
-       
+    // Get the browser name from navigator.appName
+    const browserName = navigator.appName;
 
+    // Get the browser version from navigator.appVersion
+    const browserVersion = navigator.appVersion;
 
+    // Create a message with the browser name and version
+    const message = `You are using ${browserName} version ${browserVersion}`;
 
- //    document.write("You are using");
-	// document.write(navigator.appName);
- //    document.write(navigator.appVersion);
+    // Set the message as the inner text of the "browser-info" div
+    browserInfoDiv.innerText = message;
