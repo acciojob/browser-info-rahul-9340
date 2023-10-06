@@ -1,7 +1,7 @@
 //your JS code here. If required.
 let newref = document.getElementById("browser-info")
 
-newref.innerText = `You are using ${navigator.appName}${navigator.appVersion}`;
+newref.innerText = `You are using ${navigator.userAgent}${navigator.appName}${navigator.appVersion}`;
        
 
 
